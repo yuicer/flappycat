@@ -89,7 +89,7 @@ export default class Round extends Phaser.Scene {
   setPoint() {
     const scoreGroup = this.add
       .container(SUN_WIDTH / 8, SUN_HEIGHT / 8)
-      .setDepth(2);
+      .setDepth(1);
 
     this.sun = this.add
       .image(0, 0, SUN_PIC_NAME)
@@ -110,6 +110,8 @@ export default class Round extends Phaser.Scene {
     const { width, height } = this.sys.canvas;
     this.startWord = this.add
       .text(width / 2, height / 2, '点击/键盘空格开始游戏~')
+      .setAlign('center')
+      .setOrigin(0.5, 0.5)
       .setFontSize(28)
       .setColor('#f4fcff');
   }

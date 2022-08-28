@@ -33,9 +33,9 @@ export const PLAYER_CONFIG = {
   height: 108,
 
   boundWidth: 100,
-  boundHeight: 70,
+  boundHeight: 66,
   boundOffsetX: 22,
-  boundOffsetY: 16,
+  boundOffsetY: 18,
 
   animeWidth: 660,
   animeHeight: 108,
