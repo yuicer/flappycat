@@ -87,9 +87,7 @@ export default class Round extends Phaser.Scene {
   }
 
   setPoint() {
-    const scoreGroup = this.add
-      .container(SUN_WIDTH / 8, SUN_HEIGHT / 8)
-      .setDepth(1);
+    const scoreGroup = this.add.container(SUN_WIDTH / 8, SUN_HEIGHT / 8);
 
     this.sun = this.add
       .image(0, 0, SUN_PIC_NAME)
