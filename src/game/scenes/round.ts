@@ -277,7 +277,7 @@ export default class Round extends Phaser.Scene {
     this.soundGameOver.play();
     this.soundGameOver.once('complete', () => {
       this.sound.stopAll();
-
+      this.point = 0;
       // 游戏结束，其他逻辑
       this.scene.start('start');
     });
